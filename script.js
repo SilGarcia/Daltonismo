@@ -1,12 +1,12 @@
 // Adiciona um evento de mudança ao elemento com o id 'color-filter'
 document.getElementById('color-filter').addEventListener('change', function() {
-    // Obtém o valor selecionado no elemento 'color-filter' (selecionado no dropdown)
-    const filterClass = this.value;
+    // atribui o valor da propriedade value do elemento atual à variável filterClass.
+    const filterClass = this.value; /*váriavel constante*/
 
     // Seleciona todas as imagens com a classe 'filter-image'
     const images = document.querySelectorAll('.filter-image');
 
-    // Para cada imagem selecionada...
+    // Para cada imagem selecionada... método de array que executa uma função para cada elemento do array.
     images.forEach(img => {
         // Remove todas as classes existentes da imagem, exceto 'filter-image'
         img.className = 'filter-image'; // Reset the class

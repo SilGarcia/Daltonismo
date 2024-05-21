@@ -11,22 +11,22 @@ header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1em 0; /*1 vez o tamanho da fonte atual. 0 significa que não haverá preenchimento na esquerda e na direita*/
 }
 
 main {
-    flex: 1;
+    flex: 1; /*elemento flexível - ajuste*/
     padding: 1em;
 }
 
 .filter-section {
-    margin-bottom: 1em;
+    margin-bottom: 1em; /*o preenchimento será equivalente a 1 vez o tamanho da fonte atual*/
 }
 
 .image-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*itens flexíveis dentro do contêiner flexível podem ser dispostos em várias linhas ou colunas*/
 }
 
 .image-item {
@@ -37,8 +37,8 @@ main {
 }
 
 .image-item img {
-    width: 300px; /* ajuste conforme necessário */
-    height: 200px; /* ajuste conforme necessário */
+    width: 300px; /* ajuste padrão para todas as imagens*/
+    height: 200px; /* ajuste padrão para todas as imagens*/
     object-fit: cover; /* para garantir que a imagem cubra a área definida */
     border: 1px solid #ddd;
     padding: 5px;
